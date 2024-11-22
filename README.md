@@ -65,3 +65,10 @@ Private tours are available with custom rates - contact for details.
 CSS is organized into component-specific files in `components/css/` and imported through the main `css/styles.css` file.
 
 JavaScript functionality is similarly modularized in `components/js/` and imported through `js/main.js`.
+
+## Resetting Changes
+
+To reset changes to the last commit, run:
+```bash
+git reset --hard HEAD
+```

@@ -1,164 +1,123 @@
-/* Pricing Section Styles */
 .pricing-section {
     padding: 4rem 2rem;
-    text-align: center;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+    background-color: var(--light-color);
 }
 
 .pricing-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    border-radius: 10px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pricing-container h2 {
+    color: var(--dark-color);
+    margin-bottom: 2rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
 .price-tag {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--primary-color);
+    margin-bottom: 2rem;
     font-weight: bold;
-    margin: 1.5rem 0;
-    display: inline-block;
-    padding: 0.5rem 2rem;
-    border-radius: 50px;
-    background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.1), rgba(var(--primary-color-rgb), 0.05));
 }
 
 .price-tag small {
     font-size: 1.2rem;
-    color: var(--text-muted);
-    display: block;
-    margin-top: 0.25rem;
+    color: var(--dark-color);
 }
 
 .pricing-description {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin: 1.5rem auto;
     max-width: 800px;
-    color: var(--text-color);
+    margin: 0 auto 3rem;
+    color: var(--dark-color);
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .value-points {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin: 3rem 0;
-    padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .value-point {
     padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    border-radius: 8px;
 }
 
 .value-point:hover {
     transform: translateY(-5px);
-    background: rgba(var(--primary-color-rgb), 0.05);
 }
 
 .value-point i {
-    color: var(--primary-color);
     font-size: 2rem;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .value-point p {
-    margin: 0;
-    color: var(--text-color);
-    font-size: 1.1rem;
+    color: var(--dark-color);
     line-height: 1.4;
 }
 
 .private-tour-info {
-    margin-top: 3rem;
+    background-color: var(--secondary-color);
     padding: 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.05), rgba(var(--primary-color-rgb), 0.02));
-    border-radius: 8px;
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 800px;
+    color: white;
 }
 
 .private-tour-info h3 {
-    color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.private-tour-info p {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
 .cta-container {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
 .cta-button {
+    padding: 1rem 2rem;
     font-size: 1.2rem;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    transition: var(--transition);
 }
 
-.cta-button:hover {
+.cta-button:not([disabled]):hover {
+    background-color: var(--secondary-color);
     transform: translateY(-2px);
-    background: var(--primary-color-dark);
+}
+
+.cta-button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.7;
 }
 
 .spots-limited {
     margin-top: 1rem;
-    color: var(--text-muted);
+    color: var(--dark-color);
     font-size: 0.9rem;
-    font-style: italic;
 }
 
 @media (max-width: 768px) {
-    .pricing-container {
-        padding: 1.5rem;
+    .pricing-section {
+        padding: 3rem 1rem;
     }
-
-    .price-tag {
-        font-size: 2.5rem;
-        padding: 0.5rem 1.5rem;
-    }
-
-    .pricing-description {
-        font-size: 1.1rem;
-    }
-
+    
     .value-points {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
     }
-
-    .value-point {
-        padding: 1rem;
-    }
-
-    .private-tour-info {
-        padding: 1.5rem;
-    }
-}
-
-/* Animation */
-.pricing-container.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.pricing-container.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
 }

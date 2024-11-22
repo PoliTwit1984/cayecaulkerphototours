@@ -45,6 +45,45 @@
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
+.hero-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-message {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--light-color);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-group input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--light-color);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+}
+
+.form-group input[type="email"]::placeholder {
+    color: #666;
+}
+
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
 .cta-button {
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -54,6 +93,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: var(--transition);
+    width: fit-content;
 }
 
 .cta-button:hover {
