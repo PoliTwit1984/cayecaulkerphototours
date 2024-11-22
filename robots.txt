@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /components/
+Disallow: /js/
+Disallow: /css/
+
+# Sitemaps
+Sitemap: https://cayecaulkerphototours.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10

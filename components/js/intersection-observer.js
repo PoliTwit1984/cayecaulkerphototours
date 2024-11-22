@@ -9,8 +9,8 @@ export const initIntersectionObserver = () => {
         threshold: 0.1
     });
 
-    // Observe all feature cards
-    document.querySelectorAll('.feature-card').forEach(card => {
-        observer.observe(card);
+    // Observe all feature cards and fade-in elements
+    document.querySelectorAll('.feature-card, .fade-in').forEach(element => {
+        observer.observe(element);
     });
 };

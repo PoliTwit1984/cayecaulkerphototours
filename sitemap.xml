@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://cayecaulkerphototours.com/</loc>
+        <lastmod>2024-01-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://cayecaulkerphototours.com/images/caye-caulker-sunrise-sunset-split.webp</image:loc>
+            <image:title>Sunrise Photography at The Split - Caye Caulker, Belize</image:title>
+            <image:caption>Capture stunning sunrise photos during our photography tour in Caye Caulker</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://cayecaulkerphototours.com/images/village-life-caye-caulker-belize-locals.webp</image:loc>
+            <image:title>Village Life Photography - Caye Caulker, Belize</image:title>
+            <image:caption>Document authentic island life during our photography workshop</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://cayecaulkerphototours.com/images/caye-caulker-secret-spots-lobster-belize.webp</image:loc>
+            <image:title>Hidden Spots Photography - Caye Caulker, Belize</image:title>
+            <image:caption>Discover secret photo locations during our Caribbean photo walk</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://cayecaulkerphototours.com/images/caye-caulker-beach-belize.webp</image:loc>
+            <image:title>Beach Life Photography - Caye Caulker, Belize</image:title>
+            <image:caption>Learn beach and marine photography techniques in paradise</image:caption>
+        </image:image>
+    </url>
+</urlset>
