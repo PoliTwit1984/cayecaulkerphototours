@@ -11,14 +11,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; /* Enable smooth scroll site-wide */
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    position: relative; /* For scroll-to-top button */
+    position: relative;
 }
 
 /* Hero Section with enhanced overlay */
@@ -51,12 +51,169 @@ body {
     z-index: 1;
 }
 
+/* Itinerary Section */
+.itinerary-section {
+    padding: 5rem 2rem;
+    background-color: white;
+    position: relative;
+}
+
+.itinerary-section h2 {
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.itinerary-time {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-icon {
+    min-width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 0 4px rgba(0, 168, 150, 0.2);
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: calc(50% - 50px);
+    margin: 0 20px;
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.timeline-content ul {
+    list-style: none;
+}
+
+.timeline-content ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.timeline-content ul li::before {
+    content: '•';
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Highlights Section */
+.highlights {
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    padding: 2rem;
+    background: var(--light-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.highlights h3 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.highlight-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.highlight-item i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.highlight-item p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Rest of existing CSS */
 .hero-content {
     max-width: 800px;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards;
-    z-index: 2; /* Ensure content is above overlay */
+    z-index: 2;
 }
 
 .hero h1 {
@@ -64,15 +221,15 @@ body {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
     line-height: 1.2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Enhanced text shadow */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-description {
     color: var(--light-color);
     font-size: clamp(1rem, 2vw, 1.2rem);
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Enhanced text shadow */
-    font-weight: 500; /* Improved readability */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
 }
 
 /* Scroll to Top Button */
@@ -297,6 +454,28 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: row !important;
+    }
+
+    .timeline-content {
+        width: calc(100% - 90px);
+    }
+
+    .timeline-icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
         padding: 0 1rem;

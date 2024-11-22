@@ -27,7 +27,51 @@
             "addressCountry": "BZ"
         },
         "priceRange": "$$",
-        "serviceType": "Photography Tour"
+        "serviceType": "Photography Tour",
+        "offers": {
+            "@type": "Offer",
+            "name": "Go Slow Photo Adventure",
+            "description": "4-hour guided photography tour including sunrise shots, village exploration, and beach photography",
+            "duration": "PT4H"
+        }
+    }
+    </script>
+    <!-- Tour Itinerary Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": "Go Slow Photo Adventure",
+        "description": "Capture the beauty of Caye Caulker from sunrise to mid-morning",
+        "itinerary": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Sunrise Magic at The Split",
+                    "description": "Capture Caribbean sunrise and golden hour photography"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Village Vibes & Local Life",
+                    "description": "Street photography and local culture capture"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Secret Island Spots",
+                    "description": "Hidden locations and nature photography"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Beach Life & Final Shots",
+                    "description": "Beach and marine photography session"
+                }
+            ]
+        }
     }
     </script>
 
@@ -49,6 +93,108 @@
     </header>
 
     <main>
+        <!-- New Itinerary Section -->
+        <section id="tour-itinerary" class="itinerary-section">
+            <h2>Go Slow Photo Adventure</h2>
+            <p class="itinerary-time">6:30 AM - 10:30 AM</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-sun" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sunrise Magic at The Split (6:30-7:30)</h3>
+                        <ul>
+                            <li>Catch that perfect Caribbean sunrise</li>
+                            <li>Learn the secrets of golden hour shots</li>
+                            <li>Play with palm tree silhouettes</li>
+                            <li>Get those dreamy water reflections</li>
+                            <li>Coffee and morning vibes included!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-street-view" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Village Vibes & Local Life (7:30-8:30)</h3>
+                        <ul>
+                            <li>Wander the sandy streets</li>
+                            <li>Snap colorful island houses</li>
+                            <li>Capture morning market scenes</li>
+                            <li>Meet friendly locals</li>
+                            <li>Find hidden street art gems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-tree" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Secret Island Spots (8:45-9:45)</h3>
+                        <ul>
+                            <li>Discover hidden mangrove corners</li>
+                            <li>Spot pelicans and sea birds</li>
+                            <li>Find those perfect beach swings</li>
+                            <li>Capture island life moments</li>
+                            <li>Learn local photo tricks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-umbrella-beach" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Beach Life & Final Shots (9:45-10:30)</h3>
+                        <ul>
+                            <li>Master those beach shots</li>
+                            <li>Catch some boat life action</li>
+                            <li>Perfect your paradise pics</li>
+                            <li>Share tips and tricks</li>
+                            <li>Wrap up with good vibes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlights">
+                <h3>The Good Stuff</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <p>Small group (max 8 cool people)</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <p>All phones welcome</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-image" aria-hidden="true"></i>
+                        <p>No fancy editing needed</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-tint" aria-hidden="true"></i>
+                        <p>Water included (stay hydrated!)</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <p>Island pace - we go slow</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-camera" aria-hidden="true"></i>
+                        <p>Perfect for beginners to pros</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="features" id="features">
             <h2>Tour Highlights</h2>
             <div class="features-grid">
