@@ -1,9 +1,9 @@
 /* Import base styles and utilities */
-@import '../components/css/base.css';
-@import '../components/css/utilities.css';
+@import '/components/css/base.css';
+@import '/components/css/utilities.css';
 
 /* Import component-specific styles */
-@import '../components/css/hero.css';
-@import '../components/css/itinerary.css';
-@import '../components/css/features.css';
-@import '../components/css/contact.css';
+@import '/components/css/hero.css';
+@import '/components/css/itinerary.css';
+@import '/components/css/features.css';
+@import '/components/css/contact.css';
