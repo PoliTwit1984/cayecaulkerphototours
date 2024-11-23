@@ -58,106 +58,16 @@
             "reviewCount": "500",
             "bestRating": "5",
             "worstRating": "1"
-        },
-        "review": [
-            {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Person",
-                    "name": "Sarah Mitchell"
-                },
-                "reviewBody": "The sunrise session was absolutely magical. I learned so much about smartphone photography while capturing the beauty of Caye Caulker, Belize."
-            },
-            {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Person",
-                    "name": "Marcus Chen"
-                },
-                "reviewBody": "This tour completely changed how I take photos with my phone. The hidden spots we visited were incredible, and meeting the friendly locals made it even more special!"
-            },
-            {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Person",
-                    "name": "Emma Rodriguez"
-                },
-                "reviewBody": "Such a fun vacation excursion in Caye Caulker! The small group size made it easy to get personalized tips and meet great locals along the way."
-            }
-        ],
-        "priceRange": "$$",
-        "serviceType": "Photography Tour",
-        "offers": {
-            "@type": "Offer",
-            "name": "Go Slow Photo Adventure",
-            "description": "4-hour guided photography excursion including sunrise shots, village exploration, and beach photography in Caye Caulker, Belize",
-            "price": "60",
-            "priceCurrency": "USD",
-            "duration": "PT4H"
-        }
-    }
-    </script>
-
-    <!-- Tour Operator Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TourOperator",
-        "name": "Caye Caulker Photography Tours",
-        "description": "Expert-guided smartphone photography tours in Caye Caulker, Belize",
-        "areaServed": {
-            "@type": "City",
-            "name": "Caye Caulker",
-            "containedInPlace": {
-                "@type": "Country",
-                "name": "Belize"
-            }
-        },
-        "availableLanguage": "English"
-    }
-    </script>
-
-    <!-- Product Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Caye Caulker Photography Tour",
-        "description": "4-hour guided smartphone photography tour in Caye Caulker, Belize",
-        "brand": {
-            "@type": "Brand",
-            "name": "Caye Caulker Photo Tours"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "60",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
         }
     }
     </script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
-<!-- Scroll to Top Button -->
+<body>
+    <!-- Scroll to Top Button -->
     <button class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -178,314 +88,233 @@
     </header>
 
     <main>
-        <!-- Main content sections will follow with proper H2 and H3 hierarchy -->
+        <section id="tour-itinerary" class="itinerary-section">
+            <h2>Caye Caulker, Belize Photo Excursion Itinerary</h2>
+            <p class="itinerary-time">6:30 AM - 10:30 AM</p>
+            
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-sun" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sunrise Magic at The Split (6:30-7:30)</h3>
+                        <img src="images/caye-caulker-sunrise-sunset-split.webp" 
+                             alt="Sunrise photography session at The Split in Caye Caulker, Belize" 
+                             class="timeline-image"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <ul>
+                            <li>Capture that perfect Caribbean sunrise</li>
+                            <li>Learn the secrets of golden hour shots</li>
+                            <li>Master palm tree silhouettes</li>
+                            <li>Create dreamy water reflections</li>
+                            <li>Coffee and morning vibes included!</li>
+                        </ul>
+                    </div>
+                </article>
 
-<section id="tour-itinerary" class="itinerary-section">
-    <h2>Caye Caulker, Belize Photo Excursion Itinerary</h2>
-    <p class="itinerary-time">6:30 AM - 10:30 AM</p>
-    
-    <div class="timeline">
-        <article class="timeline-item">
-            <div class="timeline-icon">
-                <i class="fas fa-sun" aria-hidden="true"></i>
-            </div>
-            <div class="timeline-content">
-                <h3>Sunrise Magic at The Split (6:30-7:30)</h3>
-                <img src="/images/caye-caulker-sunrise-sunset-split.webp" 
-                     alt="Sunrise photography session at The Split in Caye Caulker, Belize" 
-                     class="timeline-image"
-                     loading="lazy"
-                     width="800"
-                     height="600">
-                <ul>
-                    <li>Capture that perfect Caribbean sunrise</li>
-                    <li>Learn the secrets of golden hour shots</li>
-                    <li>Master palm tree silhouettes</li>
-                    <li>Create dreamy water reflections</li>
-                    <li>Coffee and morning vibes included!</li>
-                </ul>
-            </div>
-        </article>
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-street-view" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Village Vibes & Local Life (7:30-8:30)</h3>
+                        <img src="images/village-life-caye-caulker-belize-locals.webp" 
+                             alt="Colorful village streets and local life photography in Caye Caulker" 
+                             class="timeline-image"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <ul>
+                            <li>Explore sandy island streets</li>
+                            <li>Photograph colorful Caribbean houses</li>
+                            <li>Capture authentic market scenes</li>
+                            <li>Connect with friendly locals</li>
+                            <li>Discover hidden street art</li>
+                        </ul>
+                    </div>
+                </article>
 
-        <article class="timeline-item">
-            <div class="timeline-icon">
-                <i class="fas fa-street-view" aria-hidden="true"></i>
-            </div>
-            <div class="timeline-content">
-                <h3>Village Vibes & Local Life (7:30-8:30)</h3>
-                <img src="/images/village-life-caye-caulker-belize-locals.webp" 
-                     alt="Colorful village streets and local life photography in Caye Caulker" 
-                     class="timeline-image"
-                     loading="lazy"
-                     width="800"
-                     height="600">
-                <ul>
-                    <li>Explore sandy island streets</li>
-                    <li>Photograph colorful Caribbean houses</li>
-                    <li>Capture authentic market scenes</li>
-                    <li>Connect with friendly locals</li>
-                    <li>Discover hidden street art</li>
-                </ul>
-            </div>
-        </article>
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-tree" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Secret Island Spots (8:45-9:45)</h3>
+                        <img src="images/caye-caulker-secret-spots-lobster-belize.webp" 
+                             alt="Hidden mangrove corners and secret photography locations in Caye Caulker" 
+                             class="timeline-image"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <ul>
+                            <li>Explore hidden mangrove corners</li>
+                            <li>Photograph tropical wildlife</li>
+                            <li>Find Instagram-worthy spots</li>
+                            <li>Document island life moments</li>
+                            <li>Learn local photo techniques</li>
+                        </ul>
+                    </div>
+                </article>
 
-        <article class="timeline-item">
-            <div class="timeline-icon">
-                <i class="fas fa-tree" aria-hidden="true"></i>
+                <article class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-umbrella-beach" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Beach Life & Final Shots (9:45-10:30)</h3>
+                        <img src="images/caye-caulker-beach-belize.webp" 
+                             alt="Beach life and marine photography in Caye Caulker, Belize" 
+                             class="timeline-image"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <ul>
+                            <li>Perfect beach photography</li>
+                            <li>Capture marine life</li>
+                            <li>Master paradise shots</li>
+                            <li>Final photography tips</li>
+                            <li>Island vibes wrap-up</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
-            <div class="timeline-content">
-                <h3>Secret Island Spots (8:45-9:45)</h3>
-                <img src="/images/caye-caulker-secret-spots-lobster-belize.webp" 
-                     alt="Hidden mangrove corners and secret photography locations in Caye Caulker" 
-                     class="timeline-image"
-                     loading="lazy"
-                     width="800"
-                     height="600">
-                <ul>
-                    <li>Explore hidden mangrove corners</li>
-                    <li>Photograph tropical wildlife</li>
-                    <li>Find Instagram-worthy spots</li>
-                    <li>Document island life moments</li>
-                    <li>Learn local photo techniques</li>
-                </ul>
-            </div>
-        </article>
+        </section>
 
-        <article class="timeline-item">
-            <div class="timeline-icon">
-                <i class="fas fa-umbrella-beach" aria-hidden="true"></i>
+        <section class="features" id="features">
+            <h2>Caye Caulker, Belize Photo Excursion Information</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-camera-retro" aria-hidden="true"></i>
+                    <h3>Expert Photography Guide</h3>
+                    <p>Master smartphone camera tips and techniques from experienced guides who know Belize's best photo spots</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    <h3>Hidden Caribbean Gems</h3>
+                    <p>Access secret spots perfect for capturing unique island moments that most Caye Caulker visitors never find</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <h3>Perfect Lighting Mastery</h3>
+                    <p>Learn professional travel photography techniques for capturing stunning Caribbean sunrises and golden hour magic</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h3>Local Connections</h3>
+                    <p>Meet friendly locals and hear their stories while discovering authentic island life through your lens</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <h3>Smartphone Techniques</h3>
+                    <p>Transform your mobile device into a professional camera with expert composition and editing guidance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-compass" aria-hidden="true"></i>
+                    <h3>Exclusive Locations</h3>
+                    <p>Visit Caye Caulker's most photogenic spots, carefully selected for their unique visual appeal</p>
+                </div>
             </div>
-            <div class="timeline-content">
-                <h3>Beach Life & Final Shots (9:45-10:30)</h3>
-                <img src="/images/caye-caulker-beach-belize.webp" 
-                     alt="Beach life and marine photography in Caye Caulker, Belize" 
-                     class="timeline-image"
-                     loading="lazy"
-                     width="800"
-                     height="600">
-                <ul>
-                    <li>Perfect beach photography</li>
-                    <li>Capture marine life</li>
-                    <li>Master paradise shots</li>
-                    <li>Final photography tips</li>
-                    <li>Island vibes wrap-up</li>
-                </ul>
-            </div>
-        </article>
-    </div>
+        </section>
 
-    <div class="highlights">
-        <h3>Workshop Highlights</h3>
-        <div class="highlights-grid">
-            <div class="highlight-item">
-                <i class="fas fa-users" aria-hidden="true"></i>
-                <p>Small group (max 8 photographers)</p>
-            </div>
-            <div class="highlight-item">
-                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                <p>All smartphones welcome</p>
-            </div>
-            <div class="highlight-item">
-                <i class="fas fa-image" aria-hidden="true"></i>
-                <p>Professional editing tips</p>
-            </div>
-            <div class="highlight-item">
-                <i class="fas fa-tint" aria-hidden="true"></i>
-                <p>Refreshments provided</p>
-            </div>
-            <div class="highlight-item">
-                <i class="fas fa-clock" aria-hidden="true"></i>
-                <p>Island pace photography</p>
-            </div>
-            <div class="highlight-item">
-                <i class="fas fa-camera" aria-hidden="true"></i>
-                <p>All skill levels welcome</p>
-            </div>
-        </div>
-    </div>
-</section>
+        <section id="social-proof" class="social-proof-section">
+            <div class="container">
+                <h2>What Our Photographers Say</h2>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Photographers in Belize</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">120,000+</span>
+                        <span class="stat-label">Vacation Photos Taken</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Caye Caulker Spots</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5.0</span>
+                        <span class="stat-label">Star Excursion Rating</span>
+                    </div>
+                </div>
 
-<section class="features" id="features">
-    <h2>Caye Caulker, Belize Photo Excursion Information</h2>
-    <div class="features-grid">
-        <div class="feature-card">
-            <i class="fas fa-camera-retro" aria-hidden="true"></i>
-            <h3>Expert Photography Guide</h3>
-            <p>Master smartphone camera tips and techniques from experienced guides who know Belize's best photo spots</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
-            <h3>Hidden Caribbean Gems</h3>
-            <p>Access secret spots perfect for capturing unique island moments that most Caye Caulker visitors never find</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-sun" aria-hidden="true"></i>
-            <h3>Perfect Lighting Mastery</h3>
-            <p>Learn professional travel photography techniques for capturing stunning Caribbean sunrises and golden hour magic</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-users" aria-hidden="true"></i>
-            <h3>Local Connections</h3>
-            <p>Meet friendly locals and hear their stories while discovering authentic island life through your lens</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-            <h3>Smartphone Techniques</h3>
-            <p>Transform your mobile device into a professional camera with expert composition and editing guidance</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-compass" aria-hidden="true"></i>
-            <h3>Exclusive Locations</h3>
-            <p>Visit Caye Caulker's most photogenic spots, carefully selected for their unique visual appeal</p>
-        </div>
-        <div class="feature-card">
-            <i class="far fa-clock" aria-hidden="true"></i>
-            <h3>Flexible Scheduling</h3>
-            <p>Choose from sunrise sessions or arrange private tours to fit your Belize vacation schedule</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <h3>All Skill Levels</h3>
-            <p>Whether you're a beginner or experienced photographer, our guides adapt to your skill level</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-heart" aria-hidden="true"></i>
-            <h3>Island Vibes</h3>
-            <p>Experience the laid-back atmosphere of Caye Caulker while improving your photography skills</p>
-        </div>
-    </div>
-</section>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <span class="star-rating" aria-label="5 out of 5 stars">★★★★★</span>
+                        <p class="testimonial-content">"The sunrise session in Caye Caulker was absolutely magical. I learned so much about smartphone photography while capturing Belize's beauty. Meeting the friendly locals and hearing their stories made this excursion truly special!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p class="author-location">Vancouver, Canada</p>
+                            </div>
+                        </div>
+                    </div>
 
-<section id="social-proof" class="social-proof-section">
-    <div class="container">
-        <h2>What Our Photographers Say</h2>
-        <div class="stats-container">
-            <div class="stat-item fade-in">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Happy Photographers in Belize</span>
-            </div>
-            <div class="stat-item fade-in">
-                <span class="stat-number">120,000+</span>
-                <span class="stat-label">Vacation Photos Taken</span>
-            </div>
-            <div class="stat-item fade-in">
-                <span class="stat-number">30+</span>
-                <span class="stat-label">Caye Caulker Spots</span>
-            </div>
-            <div class="stat-item fade-in">
-                <span class="stat-number">5.0</span>
-                <span class="stat-label">Star Excursion Rating</span>
-            </div>
-        </div>
+                    <div class="testimonial-card">
+                        <span class="star-rating" aria-label="5 out of 5 stars">★★★★★</span>
+                        <p class="testimonial-content">"This tour completely changed how I take vacation photos. The hidden spots we visited in Caye Caulker were incredible, and the instructor's knowledge of both photography and Belize made for an unforgettable experience."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Marcus Chen</h4>
+                                <p class="author-location">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="testimonials-container">
-            <div class="testimonial-card fade-in">
-                <span class="star-rating" aria-label="5 out of 5 stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="testimonial-content">"The sunrise session in Caye Caulker was absolutely magical. I learned so much about smartphone photography while capturing Belize's beauty. Meeting the friendly locals and hearing their stories made this excursion truly special!"</p>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <h4>Sarah Mitchell</h4>
-                        <p class="author-location">Vancouver, Canada</p>
+                    <div class="testimonial-card">
+                        <span class="star-rating" aria-label="5 out of 5 stars">★★★★★</span>
+                        <p class="testimonial-content">"Such a fun and educational excursion in Belize! The small group size made it easy to get personalized tips and meet great locals along the way. I left with amazing photos of Caye Caulker and skills to capture beautiful moments wherever I travel."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Emma Rodriguez</h4>
+                                <p class="author-location">Barcelona, Spain</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="testimonial-card fade-in">
-                <span class="star-rating" aria-label="5 out of 5 stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="testimonial-content">"This tour completely changed how I take vacation photos. The hidden spots we visited in Caye Caulker were incredible, and the instructor's knowledge of both photography and Belize made for an unforgettable experience."</p>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <h4>Marcus Chen</h4>
-                        <p class="author-location">Singapore</p>
+        <section id="pricing" class="pricing-section">
+            <div class="pricing-container">
+                <h2>Experience Paradise Through Your Lens in Caye Caulker</h2>
+                <div class="price-tag">
+                    $60 <small>per person</small>
+                </div>
+                <p class="pricing-description">
+                    Make your Belize vacation unforgettable with this unique photography excursion! For less than the cost of a basic camera accessory, unlock the secrets to capturing Caye Caulker's stunning beauty. Join us for an unforgettable morning of photography, expert instruction, and authentic island experiences.
+                </p>
+                
+                <div class="value-points">
+                    <div class="value-point">
+                        <i class="fas fa-camera-retro"></i>
+                        <p>Learn pro techniques using your smartphone - no expensive gear needed!</p>
+                    </div>
+                    <div class="value-point">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Access secret photo spots in Caye Caulker most tourists never find</p>
+                    </div>
+                    <div class="value-point">
+                        <i class="fas fa-star"></i>
+                        <p>Create Instagram-worthy shots that showcase authentic Belize</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="testimonial-card fade-in">
-                <span class="star-rating" aria-label="5 out of 5 stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="testimonial-content">"Such a fun and educational excursion in Belize! The small group size made it easy to get personalized tips and meet great locals along the way. I left with amazing photos of Caye Caulker and skills to capture beautiful moments wherever I travel."</p>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <h4>Emma Rodriguez</h4>
-                        <p class="author-location">Barcelona, Spain</p>
-                    </div>
+                <div class="cta-container">
+                    <button class="cta-button" disabled>SOLD OUT</button>
+                    <p class="spots-limited">Sign up above to receive our free Caye Caulker Island Photography Guide!</p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+    </main>
 
-<section id="pricing" class="pricing-section">
-    <div class="pricing-container fade-in">
-        <h2>Experience Paradise Through Your Lens in Caye Caulker</h2>
-        <div class="price-tag">
-            $60 <small>per person</small>
-        </div>
-        <p class="pricing-description">
-            Make your Belize vacation unforgettable with this unique photography excursion! For less than the cost of a basic camera accessory, unlock the secrets to capturing Caye Caulker's stunning beauty. Join us for an unforgettable morning of photography, expert instruction, and authentic island experiences. Meet wonderful locals, discover hidden spots, and transform your Instagram feed with professional-quality photos that will make your followers dream of Belize.
-        </p>
-        
-        <div class="value-points">
-            <div class="value-point">
-                <i class="fas fa-camera-retro"></i>
-                <p>Learn pro techniques using your smartphone - no expensive gear needed!</p>
-            </div>
-            <div class="value-point">
-                <i class="fas fa-map-marked-alt"></i>
-                <p>Access secret photo spots in Caye Caulker most tourists never find</p>
-            </div>
-            <div class="value-point">
-                <i class="fas fa-star"></i>
-                <p>Create Instagram-worthy shots that showcase authentic Belize</p>
-            </div>
-            <div class="value-point">
-                <i class="fas fa-sun"></i>
-                <p>Capture magical Caribbean sunrise moments in perfect lighting</p>
-            </div>
-            <div class="value-point">
-                <i class="fas fa-users"></i>
-                <p>Meet friendly locals and hear their fascinating island stories</p>
-            </div>
-            <div class="value-point">
-                <i class="fas fa-coffee"></i>
-                <p>Enjoy morning coffee at local spots while discussing photography</p>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2024 Caye Caulker Photography Tours. All rights reserved.</p>
+    </footer>
 
-        <div class="private-tour-info">
-            <h3>Looking for a Private Excursion?</h3>
-            <p>Inquire about our private tour rates for a completely personalized Caye Caulker experience. Perfect for couples, families, or photography enthusiasts wanting dedicated instruction and flexible scheduling. Create your own perfect photo adventure in paradise while exploring Belize's most charming island!</p>
-        </div>
-
-        <div class="cta-container">
-            <button class="cta-button" disabled>SOLD OUT</button>
-            <p class="spots-limited">Sign up above to receive our free Caye Caulker Island Photography Guide!</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 Caye Caulker Photography Tours. All rights reserved.</p>
-</footer>
-
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
